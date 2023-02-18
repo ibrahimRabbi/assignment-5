@@ -19,7 +19,8 @@ function threeInputSumation(btn, input1, input2,name) {
           alert("plz input a number");
         } else {
           const sum = 0.5 * converter(input1) * converter(input2);
-          createElement(name, sum);
+          const finalSum = sum.toFixed(2)
+          createElement(name, finalSum);
           input1.value = ''
           input2.value = ''
         }
@@ -44,7 +45,8 @@ function twoInputSumation(btn, input1, input2,name) {
         }
         else {
           const sum = converter(input1) * converter(input2);
-          createElement(name, sum)
+          const finalSum = sum.toFixed(2)
+          createElement(name, finalSum)
           input1.value = ''
           input2.value = ''
         }
@@ -164,8 +166,9 @@ ellipseBtn.addEventListener('click', function () {
     alert("string is not allowed plz provide a valid number")
   } else {
      const pi = Math.PI;
-     const sum = converter(ellipse1) * converter(ellipse2) * pi;
-    createElement("ellipase");
+    const sum = converter(ellipse1) * converter(ellipse2) * pi;
+    const finalSum = sum.toFixed(2)
+    createElement("ellipase",finalSum);
     ellipse1.value = ''
     ellipse2.value = ''
   }
