@@ -88,6 +88,9 @@ function generateColor(div,apply) {
 
   
 
+
+
+
 //triangle function call and random color function call
 const triangleBtn = document.getElementById("triangle-btn");
 const base = document.getElementById("base-input");
@@ -166,12 +169,6 @@ ellipseBtn.addEventListener('click', function () {
     ellipse1.value = ''
     ellipse2.value = ''
   }
-
-  
-    
-  
-   
- 
 });
 generateColor(ellipse,applyEllipse)
 
