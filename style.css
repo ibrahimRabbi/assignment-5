@@ -19,3 +19,7 @@ button{
     background-color: rgb(114, 96, 236);
     color: aliceblue;
 }
+section{
+    width: 90%;
+    margin: auto;
+}
