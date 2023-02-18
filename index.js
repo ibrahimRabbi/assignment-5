@@ -20,7 +20,8 @@ function threeInputSumation(btn, input1, input2,name) {
         } else {
           const sum = 0.5 * converter(input1) * converter(input2);
           createElement(name, sum);
-        
+          input1.value = ''
+          input2.value = ''
         }
     })
 }
@@ -43,7 +44,9 @@ function twoInputSumation(btn, input1, input2,name) {
         }
         else {
           const sum = converter(input1) * converter(input2);
-           createElement(name,sum)
+          createElement(name, sum)
+          input1.value = ''
+          input2.value = ''
         }
 })
 }
@@ -148,10 +151,27 @@ const ellipse = document.getElementById("ellipse")
 const applyEllipse = document.getElementById("apply-ellipse")
 
 ellipseBtn.addEventListener('click', function () {
-  const pi = Math.PI;
-  const sum = converter(ellipse1) * converter(ellipse2) * pi
-  alert(sum)
-  createElement('ellipase')
+  const input1 = ellipse1.value;
+  const input2 = ellipse2.value;
+  if (input1 == "" || input2 == "") {
+   alert("plz provide a input")
+  } else if (input1 < 0 || input2 < 0) {
+    alert("plz provide a posaetive number")
+  } else if (isNaN(input1) || isNaN(input2)) {
+    alert("string is not allowed plz provide a valid number")
+  } else {
+     const pi = Math.PI;
+     const sum = converter(ellipse1) * converter(ellipse2) * pi;
+    createElement("ellipase");
+    ellipse1.value = ''
+    ellipse2.value = ''
+  }
+
+  
+    
+  
+   
+ 
 });
 generateColor(ellipse,applyEllipse)
 
