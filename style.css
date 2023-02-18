@@ -10,15 +10,15 @@ span{
     font-size: 13px;
 }
 
-button{
+.btnn{
     margin-top: 45px;
     width: 75%;
-    padding: 7px 0px;
-    border-radius: 6px;
-    border: none;
-    background-color: rgb(114, 96, 236);
-    color: aliceblue;
 }
+.bt{
+ font-size: 12px;
+ padding: 5px 3px;
+}
+ 
 section{
     width: 90%;
     margin: auto;
