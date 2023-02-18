@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
     <section class="d-flex justify-content-between align-items-center rounded mt-4 blog">
         <div>
             <h3>Interactive</h3>
@@ -19,53 +20,58 @@
         </div>
         <a href="blog.html" class="btn btn-primary">Blog</a>
     </section>
-    <section class="d-flex justify-content-between my-5   ">
 
-        <div class="row row-gap-4 w-75">
+
+    <section class="d-block d-lg-flex justify-content-between my-5 mx-auto">
+        <div class="row row-gap-4  m-auto w-75">
  <!-- triangle area -->
-            <div class="col-4">
-                <div class="card ">
-                    <img class="m-auto pt-3" width="190" height="140" src="images/triangle.png" alt="" srcset="">
-                    <div class="card-body text-center">
-                        <h4 class="card-title">Triangle</h4>
-                        <p>Area (A) = 0.5 × b × h</p>
-                        <div class="d-flex justify-content-between gap-3">
-                            <label for="">
-                                <input id="base-input" placeholder="b" type="text"> cm
-                            </label>
-                            <label for="">
-                                <input id="height-input" placeholder="h" type="text"> cm
-                            </label>
+            <div id="triangle" class="col-12 col-lg-4">
+                <div id="apply" class="card ">
+                     
+                        <img class="m-auto pt-3" width="190" height="140" src="images/triangle.png" alt="" srcset="">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Triangle</h4>
+                            <p>Area (A) = 0.5 × b × h</p>
+                            <div class="d-flex justify-content-between gap-3">
+                                <label for="">
+                                    <input id="base-input" placeholder="b" type="text"> cm
+                                </label>
+                                <label for="">
+                                    <input id="height-input" placeholder="h" type="text"> cm
+                                </label>
+                            </div>
+                            <button class=" btnn btn btn-primary" id="triangle-btn">calculate</button>
                         </div>
-                        <button class=" btnn btn btn-primary" id="triangle-btn">calculate</button>
-                    </div>
+                     
                 </div>
             </div>
 
 <!-- rectangle area -->
-            <div class="col-4">
-                <div class="card">
-                    <img class="m-auto pt-3" width="190" height="140" src="images/rectangle.png" alt="" srcset="">
-                    <div class="card-body text-center">
-                        <h4>Rectangle</h4>
-                        <p>Area (A) = W × L</p>
-                        <div class="d-flex justify-content-evenly gap-3">
-                            <label for="">
-                                <input id="rect-base" placeholder="w" type="text"> cm
-                            </label>
-                            <label for="">
-                                <input id="rect-height" placeholder="L" type="text"> cm
-                            </label>
-
+            <div id="rectangle"class="col-12 col-lg-4">
+                <div id="apply-rect" class="card">
+                     
+                        <img class="m-auto pt-3" width="190" height="140" src="images/rectangle.png" alt="" srcset="">
+                        <div class="card-body text-center">
+                            <h4>Rectangle</h4>
+                            <p>Area (A) = W × L</p>
+                            <div class="d-flex justify-content-evenly gap-3">
+                                <label for="">
+                                    <input id="rect-base" placeholder="w" type="text"> cm
+                                </label>
+                                <label for="">
+                                    <input id="rect-height" placeholder="L" type="text"> cm
+                                </label>
+                    
+                            </div>
+                            <button class="btnn btn btn-primary" id="rectangle-btn">calculate</button>
                         </div>
-                        <button class="btnn btn btn-primary" id="rectangle-btn">calculate</button>
-                    </div>
+                     
                 </div>
             </div>
 
 <!-- parallelogram area  -->
-            <div class="col-4">
-                <div class="card">
+            <div id="parallelo" class="col-12 col-lg-4">
+                <div id="apply-para" class="card">
                     <img class="m-auto pt-3" width="190" height="140" src="images/parallelogram.png" alt="" srcset="">
                     <div class="card-body text-center">
                         <h4>parallelogram</h4>
@@ -86,8 +92,8 @@
             </div>
 
 <!-- rhombus area  -->
-            <div class="col-4">
-                <div class="card">
+            <div id="rhombus" class="col-12 col-lg-4">
+                <div id="apply-rhombus" class="card">
                     <img class="m-auto pt-3" width="190" height="140" src="images/rhombus.png" alt="" srcset="">
                     <div class="card-body text-center">
                         <h4>Rhombus</h4>
@@ -108,8 +114,8 @@
             </div>
 
 <!-- pentagon area  -->
-            <div class="col-4">
-                <div class="card">
+            <div id="pentagone" class="col-12 col-lg-4">
+                <div id="apply-pentagone" class="card">
                     <img class="m-auto pt-3" width="190" height="140" src="images/pentagon.png" alt="" srcset="">
                     <div class="card-body text-center">
                         <h4>pentagon</h4>
@@ -129,8 +135,8 @@
             </div>
 
 
-            <div class="col-4">
-                <div class="card">
+            <div id="ellipse" class="col-12 col-lg-4">
+                <div id="apply-ellipse" class="card">
                     <img class="m-auto pt-3" width="190" height="140" src="images/ellipse.png" alt="" srcset="">
                     <div class="card-body text-center">
                         <h4>ellipse</h4>
@@ -150,7 +156,7 @@
             </div>
 
         </div>
-        <div class="w-25">
+        <div  class="calculate">
             <div class="card">
                 <div class="card-body text-center">
                     <h5 class="card-title">Area calculation</h5>

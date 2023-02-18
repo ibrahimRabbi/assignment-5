@@ -26,4 +26,16 @@ section{
 .blog{
     background-color: rgb(184, 231, 231);
     padding: 0px 20px;
+     
 }
+.calculate{
+    width: 25%;
+}
+@media only screen and (max-width:576px) {
+    
+    .calculate{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+ 
